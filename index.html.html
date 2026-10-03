@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAT — Creative Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f2ec;color:#171717;line-height:1.5}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:22px 6%;background:rgba(245,242,236,.88);backdrop-filter:blur(12px);border-bottom:1px solid #ddd8cf}
+.logo{font-weight:800;letter-spacing:.08em}
+.navlinks{display:flex;gap:28px;font-size:14px}
+.navlinks a:hover{opacity:.55}
+.hero{min-height:100vh;padding:150px 6% 80px;display:grid;grid-template-columns:1.3fr .7fr;align-items:end;gap:50px}
+.eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px}
+h1{font-size:clamp(64px,11vw,160px);line-height:.82;letter-spacing:-.07em;font-weight:800}
+.hero-right{padding-bottom:10px;max-width:390px}
+.hero-right p{font-size:20px;margin-bottom:30px}
+.btn{display:inline-block;padding:14px 22px;border:1px solid #171717;border-radius:999px;font-size:14px}
+.btn:hover{background:#171717;color:#fff}
+.section{padding:100px 6%}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:45px;border-bottom:1px solid #bbb;padding-bottom:16px}
+.section-head h2{font-size:42px;letter-spacing:-.04em}
+.section-head span{font-size:13px}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{min-height:430px;background:#ded8ce;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:25px;transition:.3s}
+.card:hover{transform:translateY(-5px)}
+.visual{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:70px;font-weight:800;letter-spacing:-.08em}
+.v1{background:linear-gradient(135deg,#d9d2c5,#b8aa93)}
+.v2{background:linear-gradient(135deg,#c8d0c4,#8e9b88)}
+.v3{background:linear-gradient(135deg,#d7c0c4,#a36f78)}
+.v4{background:linear-gradient(135deg,#c9c7d5,#7b7894)}
+.card-info{position:relative;background:rgba(245,242,236,.92);padding:14px 18px;width:100%;display:flex;justify-content:space-between}
+.card-info small{opacity:.6}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.about p{font-size:27px;letter-spacing:-.02em}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.tag{border:1px solid #aaa;padding:9px 14px;border-radius:999px;font-size:13px}
+.contact{background:#171717;color:#f5f2ec;min-height:65vh;display:flex;flex-direction:column;justify-content:space-between}
+.contact h2{font-size:clamp(55px,9vw,125px);line-height:.85;letter-spacing:-.06em;max-width:1000px}
+.contact a{border-color:#777}
+.contact a:hover{background:#f5f2ec;color:#171717}
+footer{display:flex;justify-content:space-between;font-size:12px;opacity:.65;padding-top:50px}
+@media(max-width:750px){
+nav{padding:18px 5%}.navlinks{gap:14px;font-size:12px}.navlinks a:nth-child(2){display:none}
+.hero{grid-template-columns:1fr;padding:130px 5% 70px}.hero-right{max-width:none}
+.section{padding:75px 5%}.section-head h2{font-size:32px}.projects,.about{grid-template-columns:1fr}.card{min-height:330px}
+.about{gap:35px}.about p{font-size:22px}.contact h2{font-size:58px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">DAT / CREATIVE</div>
+  <div class="navlinks">
+    <a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">Graphic Designer / Brand Identity</div>
+    <h1>MAKE<br>IT<br>MEAN.</h1>
+  </div>
+  <div class="hero-right">
+    <p>Xin chào, tôi là Dat. Tôi tạo ra những nhận diện thương hiệu đơn giản, có cá tính và dễ ghi nhớ.</p>
+    <a class="btn" href="#work">XEM DỰ ÁN ↓</a>
+  </div>
+</header>
+
+<section class="section" id="work">
+  <div class="section-head"><h2>Selected Work</h2><span>01 — 04</span></div>
+  <div class="projects">
+    <article class="card"><div class="visual v1">AUTO<br>FORM</div><div class="card-info"><b>Autoform</b><small>Brand Identity</small></div></article>
+    <article class="card"><div class="visual v2">MỘC<br>STUDIO</div><div class="card-info"><b>Mộc Studio</b><small>Visual Identity</small></div></article>
+    <article class="card"><div class="visual v3">NỮ<br>VIỆT</div><div class="card-info"><b>Người phụ nữ Việt Nam</b><small>Campaign</small></div></article>
+    <article class="card"><div class="visual v4">NORTH<br>STAR</div><div class="card-info"><b>North Star</b><small>Logo Design</small></div></article>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-head"><h2>About</h2><span>WHO I AM</span></div>
+  <div class="about">
+    <p>Tôi quan tâm đến cách một ý tưởng được biến thành hình ảnh — từ keyword, concept, logo cho đến một hệ thống nhận diện hoàn chỉnh.</p>
+    <div>
+      <p>Focus</p>
+      <div class="skills">
+        <span class="tag">Brand Identity</span><span class="tag">Logo Design</span>
+        <span class="tag">Art Direction</span><span class="tag">Typography</span>
+        <span class="tag">Graphic Design</span><span class="tag">Packaging</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div>
+    <div class="eyebrow">Have a project?</div>
+    <h2>LET'S MAKE<br>SOMETHING.</h2>
+  </div>
+  <div>
+    <a class="btn" href="mailto:hello@example.com">hello@example.com ↗</a>
+    <footer><span>© 2026 DAT CREATIVE</span><span>VIETNAM</span></footer>
+  </div>
+</section>
+</body>
+</html>
